@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering Students in Computer Science - Syntax Circute</title>
+    <meta name="description" content="Empowering students in Computer Science with online courses, personalized tuitions, and final year project guidance.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <style>
+        /* Custom styles for homepage */
+        :root {
+            --primary-color: #ff4d94; /* Pink */
+            --secondary-color: #0056b3; /* Blue */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling */
+            margin: 0; /* Remove default margin */
+        }
+
+        header {
+            background: url('https://source.unsplash.com/1600x900/?student,education') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+        }
+
+        header h1,
+        header p {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero-btn:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .service-card {
+            transition: transform 0.3s, box-shadow 0.3s; /* Card hover effect */
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px); /* Lift effect on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .bg-light-custom {
+            background-color: #f9f9f9 !important; /* Custom light background */
+        }
+
+        .student-image {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .cta-button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        .color-section {
+            padding: 60px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .student-name {
+            color: #000000; /* Change this to your desired color */
+        }
+
+        .student-message {
+            color: #0c0c0c; /* Change this to your desired message color */
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            color: var(--secondary-color);
+        }
+
+        .testimonial-card {
+            transition: transform 0.3s; /* Card hover effect */
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+
+        .contact-button {
+            background-color: var(--secondary-color);
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #004085;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .feature-icon {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body data-aos="fade-in">
+    <main>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Syntax Circute</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tuitions.html">Tuitions</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Final Year Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <header>
+            <div class="container">
+                <h1>Empowering Students in Computer Science</h1>
+                <p class="lead">Join our online courses, expert tuitions, and innovative project guidance!</p>
+                <a href="courses.html" class="btn btn-light hero-btn">Explore Courses</a>
+            </div>
+        </header>
+
+        <!-- Features Section -->
+        <section class="py-5" data-aos="fade-up">
+            <div class="container">
+                <h2 class="text-center mb-4">Features</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <i class="feature-icon fas fa-laptop-code"></i>
+                        <h5 class="mt-3">Interactive Learning</h5>
+                        <p>Engaging courses with interactive content to enhance your learning experience.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="feature-icon fas fa-users"></i>
+                        <h5 class="mt-3">Expert Instructors</h5>
+                        <p>Learn from experienced professionals who are experts in their fields.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="feature-icon fas fa-certificate"></i>
+                        <h5 class="mt-3">Certification</h5>
+                        <p>Receive certificates upon completion to boost your resume.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Colorful Services Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Services</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center shadow service-card" data-aos="fade-left" data-aos-delay="100"
+                            style="background-color: var(--secondary-color); color: white;">
+                            <div class="card-body">
+                                <i class="fas fa-book fa-2x mb-3"></i>
+                                <h5 class="card-title">Courses</h5>
+                                <p class="card-text">Enroll in a variety of online courses designed for Computer Science
+                                    students, including programming languages, web development, and data science. Our
+                                    courses are tailored to fit your schedule.</p>
+                                <a href="courses.html" class="btn btn-light cta-button">View Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center shadow service-card" data-aos="fade-up" data-aos-delay="200"
+                            style="background-color: #28a745; color: white;">
+                            <div class="card-body">
+                                <i class="fas fa-chalkboard-teacher fa-2x mb-3"></i>
+                                <h5 class="card-title">Tuitions</h5>
+                                <p class="card-text">Get personalized tutoring sessions with our expert instructors. We focus
+                                    on your unique learning needs to help you excel in your studies.</p>
+                                <a href="tuitions.html" class="btn btn-light cta-button">Get Tuition Help</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center shadow service-card" data-aos="fade-right" data-aos-delay="300"
+                            style="background-color: #17a2b8; color: white;">
+                            <div class="card-body">
+                                <i class="fas fa-project-diagram fa-2x mb-3"></i>
+                                <h5 class="card-title">Final Year Projects</h5>
+                                <p class="card-text">Need help with your final year project? Our team provides guidance and
+                                    support for a variety of project topics in Computer Science.</p>
+                                <a href="projects.html" class="btn btn-light cta-button">Explore Projects</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Student Testimonials Section -->
+        <section class="color-section" style="background-color: #ff4d94;">
+            <div class="container">
+                <h2 class="text-center mb-4">What Our Students Say</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card testimonial-card text-center" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="https://cdn.pixabay.com/photo/2023/09/22/15/45/panda-8269336_960_720.png" alt="Student Name" class="student-image">
+                            <div class="card-body">
+                                <h5 class="student-name">John Doe</h5>
+                                <p class="student-message">"The courses were engaging and helped me grasp complex concepts easily!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card testimonial-card text-center" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="https://cdn.pixabay.com/photo/2023/09/22/15/45/panda-8269336_960_720.png" alt="Student Name" class="student-image">
+                            <div class="card-body">
+                                <h5 class="student-name">Jane Smith</h5>
+                                <p class="student-message">"The tutors were very knowledgeable and provided great support!"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card testimonial-card text-center" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="https://cdn.pixabay.com/photo/2023/09/22/15/45/panda-8269336_960_720.png" alt="Student Name" class="student-image">
+                            <div class="card-body">
+                                <h5 class="student-name">Emily Johnson</h5>
+                                <p class="student-message">"I loved the flexibility of the online courses. Highly recommend!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action Section -->
+        <section class="py-5 bg-light-custom">
+            <div class="container text-center">
+                <h2>Ready to Get Started?</h2>
+                <p>Join our community and take your skills to the next level!</p>
+                <a href="contact.html" class="btn contact-button">Contact Us</a>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Syntax Circute. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> |
+                <a href="terms.html">Terms of Service</a>
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+</body>
+
+</html>
